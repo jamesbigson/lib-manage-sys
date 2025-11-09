@@ -315,8 +315,9 @@ public class LibraryManagementSystem extends Application {
             }
         });
 
-        // Initial load of books
+        // Initial load of books and rentals
         refreshTableView();
+        refreshRentalTableView(); // Load rental details at startup
 
         Scene scene = new Scene(mainLayout, 800, 600);
         primaryStage.setScene(scene);
